@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interfaz de usuario" />
+    <title>ULTHAR</title>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>    
+  </head>
+
+  <body id="body_interfaz">
+
+    <header class="header_interfaz">
+      <div class="header__logo">
+          <img class="header__logo__img" src="./assets/ulthar-logo1.png"/>
+      </div>
+
+      <div class="header__search">
+        <input class="input" type="text" placeholder="Buscar" />
+      </div>
+
+      <p class="nombre_usuario"><%= name %></p>
+
+      <div class="header__login">
+        <img class="header__login__img" id="header__login__img" src="./assets/user_icon.png" alt="" />
+
+
+
+    </header>
+
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <li><b>Mi cuenta</b></li>
+        <li><b>Configuracion</b></li>
+        <li><b>Administrador de recursos</b></li>        
+        <li>___________</li>
+        <li><b><a href="cerrar">Cerrar sesion</a></b></li>
+        <li><b>Idioma</b></li>
+        <li><b>Terminos y condiciones</b></li>
+      </ul>
+    </div>
+
+    
+
+    <section class="selector_imagen">
+      <div class="portada">
+        <div class="perfil_img">
+          <img class="imagen_perfil" src=""></img>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor_principal-administrador">
+      <div class="container_iconos">
+        
+          <img
+            class="administrador_usuarios"
+            id="administrador_usuarios"
+            src="https://img.icons8.com/ios-filled/100/000000/cloud-user-group.png"
+          />
+          <p><b>Usuarios</b></p>
+        
+      </div>
+      <div class="container_iconos">
+        
+          <img
+            class="administrador_maquina"
+            id="administrador_maquina"
+            src="https://img.icons8.com/ios-filled/100/000000/robot.png"
+            
+          />
+          <p><b>Máquinas</b></p>
+        
+      </div>
+      <div class="container_iconos">
+        
+          <img
+            class="administrador_proveedores"
+            id="administrador_proveedores"
+            src="https://img.icons8.com/ios-filled/64/000000/truck.png"
+          />
+          <p><b>Proveedores</b></p>
+        
+      </div>
+      <div class="container_iconos">
+        
+          <img
+            class="administrador_mantenimiento"
+            id="administrador_mantenimiento"
+            src="https://img.icons8.com/ios-filled/100/000000/maintenance.png"
+          />
+          <p><b>Mantenimiento</b></p>
+        
+      </div>
+    </section>
+    
+    <section id="user_admin" class="user_admin">
+      <div class='franja'>
+      <h2>Administrador de usuarios</h2>
+      </div>
+      <div class="container_iconos-estancias">
+        <a href="/maquinas" class="link_g-usuarios">
+          <img class="gestion_usuarios" id="gestion_usuarios" src="https://img.icons8.com/ios-glyphs/90/000000/add-user-group-man-man.png"/>
+          <p><b>Gestionar listas <br> de usuarios</b></p>
+        </a>
+      </div>
+      
+      <div class="container_iconos-estancias">
+        <img class="informes" id="informes" src="https://img.icons8.com/fluent-systems-filled/100/000000/open-resume.png"/>
+        <p><b>Generar informes</b></p>
+      </div>
+    
+    </section>
+
+    <!--********************************************************-->
+    <!--************* POP UP GESTION DE USUARIOS  **************-->
+    <!--********************************************************-->
+
+    <!--😴😴😴EN OBRA POR CONSULTA ROTA😴😴😴-->
+
+    <!--
+    
+    <dialog id="dialogo_gestionusuarios" class="dialogo_gestionusuarios" >
+    
+      
+    <div class="selector_maquina">
+      <select name="maquinas" class="maquinas_disponibles">
+         <option value="0">Selecciona la máquina</option> 
+         <option value="1">Listar todo</option> 
+         <option value="2"></option>         
+      </select>
+    
+
+
+      <input
+      class="consultar_listas"
+      type="submit"
+      value="Consultar"
+      id="consultar_listas"
+      onclick="alert('¡checking!')"
+      />
+
+      <img class="cierre" id="cierre" src="https://img.icons8.com/fluent-systems-filled/50/000000/close-window.png"/>
+    </div>
+
+    <div class="forma_consulta-usuarios">
+      <table border="1" class="resultados_consulta-usuarios">
+        <thead>
+          <tr>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Cargo</th>
+            <th>Dependencia</th>
+            <th>Estado</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+      <footer class="footer_consulta-usuarios">
+        <input
+        class="consultar_listas"
+        type="button"
+        value="Buscar Usuarios"
+        id="Buscar_usuarios"
+      />
+        
+      <input
+      class="consultar_listas"
+      type="button"
+      value="Añadir Usuarios"
+      id="anadir_usuarios"
+    />
+
+      </footer>
+      
+    </dialog>
+
+    <dialog id="dialogo_generarinformes" class="dialogo_generarinformes">
+
+      <p>Informes</p>
+
+    </dialog>
+
+    -->
+
+
+    <!--********************************************************-->
+    <!--********************************************************-->
+    
+    
+    <section id="machine_admin" class="machine_admin">
+      <div class='franja'>
+      <h2>Mi máquina</h2>
+      
+    </div>
+    <form action="/frminsertar_maquina" method="POST">
+      <input
+        type="text"
+        name="id_maquina"
+        placeholder="ID de la máquina"
+        required
+      />
+      <input
+        type="number"
+        name="capacidad"
+        placeholder="Capacidad"
+      />
+      <input
+        type="text"
+        name="ubicacion"
+        placeholder="Ubicación"
+      />
+
+      <select name="id_articulo">
+        <option value="00">Selecciona un producto</option> 
+        <option value="01">tapabocas</option> 
+        <option value="02">Guantes</option>
+                  
+     </select>
+      
+      <input
+        type="submit"
+        id="boton_registro-maquina"
+        class="boton_registro"
+        value="Registro"
+      />
+    </form>
+    </section>
+
+    <section id="prov_admin" class="prov_admin">
+      <div class='franja'>
+      <h2>Administrador de proveedores</h2>
+    </div>
+    </section>
+
+    <section id="maint_admin" class="maint_admin">
+      <div class='franja'>
+      <h2>Mantenimiento</h2>
+    </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_logo">
+        <a href="/">
+          <img class="footer_logo-img" src="./assets/ulthar-logo1.png" />
+        </a>
+      </div>
+      <div class="footer_contenido">
+        <div class="footer_contenido-links">
+          <a href="/"
+            ><p><b>HOME</b></p></a
+          >
+          <a href="/"
+            ><p><b>PRODUCTS</b></p></a
+          >
+          <a href="/"
+            ><p><b>SERVICES</b></p></a
+          >
+          <a href="/"
+            ><p><b>COMPANY</b></p></a
+          >
+        </div>
+        <div class="footer_contenido-redes">
+          <img src="https://img.icons8.com/metro/52/000000/facebook.png" />
+          <img src="https://img.icons8.com/metro/52/000000/instagram.png" />
+          <img src="https://img.icons8.com/ios-glyphs/60/000000/youtube--v1.png"/>
+          <img src="https://img.icons8.com/metro/52/000000/linkedin.png" />
+        </div>
+        <div class="footer_contenido-terminos">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            totam assumenda voluptas architecto nam, aspernatur fugit eligendi?
+            Odio harum et, voluptatibus placeat numquam quos eos reiciendis,
+            voluptatem amet quo explicabo?
+          </p>
+        </div>
+      </div>
+      <div class="footer_cookies">
+        <p>
+          Advertencia: Este sitio utiliza cookies propias y de terceros © 2022
+        </p>
+      </div>
+    </footer>
+
+    <script>
+
+      //******************************************************
+      // ******** MENU ADMINISTRADOR DE INTERFAZ ***********
+      //******************************************************
+      
+      $(document).ready(function () {
+      $("#sidebar").hide();
+      $("#header__login__img").on("click", function () {
+      $("#sidebar").slideToggle(); //defino una funcion que abre y cierra como bisagra
+         });
+      });
+      
+      //******************************************************
+      //******** POP UPS ADMINISTRADOR DE INTERFAZ ***********
+      //******************************************************
+      
+      /*
+
+      var gestion_usuarios = document.getElementById("gestion_usuarios");
+      var cierre = document.getElementById("cierre");
+      var dialogo_gestionusuarios = document.getElementById(
+      "dialogo_gestionusuarios"
+      );
+      gestion_usuarios.addEventListener("click", () =>
+      dialogo_gestionusuarios.showModal()
+      );
+      cierre.addEventListener("click", () => dialogo_gestionusuarios.close());
+      
+      var informes = document.getElementById("informes");
+      var dialogo_generarinformes = document.getElementById(
+      "dialogo_generarinformes"
+      );
+      informes.addEventListener("click", () => dialogo_generarinformes.showModal());
+      //botregistro.addEventListener("click", () => dialogo.close());
+   
+      */
+
+
+    </script>
+
+</body>
+</html>
