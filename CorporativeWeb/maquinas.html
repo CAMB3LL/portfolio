@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interfaz de usuario" />
+    <title>ULTHAR</title>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>    
+  </head>
+
+  <body id="body_interfaz">
+
+    <header class="header_interfaz">
+      <div class="header__logo">
+          <img class="header__logo__img" src="./assets/ulthar-logo1.png"/>
+      </div>
+
+      <div class="header__search">
+        <input class="input" type="text" placeholder="Buscar" />
+      </div>
+
+      <p class="nombre_usuario"><b><%= name %></b></p>
+
+      <div class="header__login">
+        <img class="header__login__img" id="header__login__img" src="./assets/user_icon.png" alt="" />
+
+      </header>
+
+      <div class="dialogo_gestionusuarios">
+        <div class="selector_maquina" id="selector_maquina"" >
+          <select name="maquinas" class="maquinas_disponibles">
+              <option value="0">Selecciona la máquina</option> 
+              <% namema.forEach(function (namema) { %>
+              <option><%= namema.id_maquina %></option> 
+              <% }) %>
+          </select>
+
+          <input
+      class="consultar_listas"
+      type="submit"
+      value="Consultar Usuarios"
+      id="consultar_listas"
+      onclick="alert('¡checking!')"
+      />
+        </div>
+      
+      
+      
+      
+      
+
+      <!--<img class="cierre" id="cierre" src="https://img.icons8.com/fluent-systems-filled/50/000000/close-window.png"/>-->
+    
+
+    <div class="forma_consulta-usuarios">
+      <table border="1" class="resultados_consulta-usuarios">
+        <thead>
+          <tr>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Cargo</th>
+            <th>Dependencia</th>
+            <th>Estado</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+      </table>
+      </div>
+
+      <footer class="footer_consulta-usuarios">
+        <input
+        class="consultar_listas"
+        type="button"
+        value="Buscar Usuarios"
+        id="Buscar_usuarios"
+      />
+        
+      <input
+      class="consultar_listas"
+      type="button"
+      value="Añadir Usuarios"
+      id="anadir_usuarios"
+      />
+
+      </footer>
+    </div>
+  </div>
+
+  </body>
+</html>
