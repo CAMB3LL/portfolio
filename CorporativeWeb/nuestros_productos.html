@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -226,3 +227,233 @@
     //botregistro.addEventListener("click", () => dialogo.close());
   </script>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--este meta es para ayudar a que el proyecto pueda escalarse en el tamaño del dispositivo del usuario-->
+    <meta
+      name="description" content="productos" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>    
+    <title>Nuestros Productos</title>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+  </head>
+  <body id="body">
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="./"
+          ><img class="header__logo__img" src="./assets/ulthar-logo1.png"
+        /></a>
+      </div>
+
+      <div class="header__search">
+        <input class="input" type="text" placeholder="Buscar" />
+      </div>
+
+      <div id="header__login" class="header__login">
+        <img class="header__login__img" src="./assets/user_icon.png" alt="" />
+      </div>
+
+      <div class="header__menu">
+        <div class="header__menu__imagen">
+          <img class="header__menu__img" src="./assets/menu.png" alt="" />
+        </div>
+
+        <ul class="lista">
+          <li><a href="./quienes_somos.html">Quiénes Somos</a></li>
+          <li><a href="./nuestros_productos.html">Nuestros Productos</a></li>
+          <li><a href="./nuestros_servicios.html">Nuestros Servicios</a></li>
+          <li><a href="./galeria.html">Galeria de Imagenes</a></li>
+          <li><a href="./contactenos.html">Contáctenos</a></li>
+          <li>______</li>
+          <li><a href="/">Idioma</a></li>
+          <li><a href="/">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="login" class="login">
+      <div class="login_registro">
+        <div class="login_registro-usuario">
+          <p>
+            ¿Nuevo usuario?
+            <input
+              type="button"
+              class="user_reg"
+              id="user_reg"
+              value="Registrate aquí"
+            />
+          </p>
+        </div>
+        <div class="login_registro-producto">
+          <p><a href="/">Registra aquí</a> tus productos</p>
+        </div>
+      </div>
+      <div class="login_forma">
+        <h2>Iniciar Sesión</h2>
+        <div id="login_forma-datos" class="login_forma-datos">
+          <form action="/login" method="POST">
+            <input
+            class="usuario"
+            type="text"
+            name="e_mail"
+            placeholder="Dirección de correo"
+            required
+          />
+          <input
+            class="contraseña"
+            type="password"
+            name="contrasena"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+        <p>Al iniciar sesión usted acepta nuestros términos de servicio</p>
+
+        <div class="button_login">
+          <input
+            class="iniciar-sesion"
+            type="submit"
+            value="Iniciar Sesión"
+            onclick="alert('¡Iniciar sesión!')"
+          />
+          <input class="recuerdame" type="checkbox" /><i> Recuérdame</i>
+        </div>
+        <a href="/">¿Olvidaste tu usuario o contraseña?</a>
+          </form>
+      </div>
+    </section>
+
+    <dialog id="dialogo" class="pop_up">
+      <h1>Registrarte es demasiado fácil</h1>
+      <form action="/frminsertar" method="POST">
+        <input
+          type="text"
+          name="nombre_usuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+        <input
+          type="tel"
+          name="numero_celular"
+          placeholder="Número de celular"
+          required
+        />
+        <input
+          type="email"
+          name="e_mail"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="password"
+          name="contrasena"
+          placeholder="Contraseña"
+          required
+        />
+
+        <input
+          type="submit"
+          id="boton_registro"
+          class="boton_registro"
+          value="Log On"
+        />
+      </form>
+    </dialog>
+
+  
+
+    <section class="buscador_productos">
+      <h1>Buscar productos por nombre</h1>
+      <div class="buscador_productos-nombre">
+        <input type="text" class="input_buscaproductos" />
+        <input type="button" class="boton_busca_productos" value="Buscar" />
+      </div>
+      <h1>Buscar productos por categoría</h1>
+      <div class="buscador_productos-categoria">
+        <a href="/">Software</a>
+        <a href="/">Hadware</a>
+        <a href="/">Automatización</a>
+        <a href="/">IoT</a>
+      </div>
+    </section>
+
+    <section class="imagenes_productos">
+      <img class="imagenes_productos-img" src="./assets/Sentinel-1.jpg"></img>
+      <img class="imagenes_productos-img" src="./assets/Tecnología-industrial.jpg"></img>
+      <img class="imagenes_productos-img" src="./assets/domotica.jpg"></img>
+      <div class="descripcion_productos">
+        <h1>Productos para la industria aeroespacial</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nulla voluptatum laboriosam odit autem suscipit expedita alias beatae vitae odio ut facere neque commodi, recusandae tempora nemo doloribus voluptates libero!</p>
+      </div>      
+      <div class="descripcion_productos">
+        <h1>Productos para la industria local y la oficina</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex accusamus necessitatibus nemo odit consequatur? Unde ex ipsum tempora recusandae laborum dolores id vitae veniam reiciendis alias! Corrupti provident tempore est.</p>
+      </div>
+      <div class="descripcion_productos">
+        <h1>IoT: Tecnología para uso doméstico</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, optio est porro perspiciatis corporis quia pariatur dolore, vero aspernatur quam voluptates unde veritatis minima nesciunt, magni quibusdam itaque fugit eligendi?</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_logo">
+        <a href="/">
+          <img class="footer_logo-img" src="./assets/ulthar-logo1.png" />
+        </a>
+      </div>
+      <div class="footer_contenido">
+        <div class="footer_contenido-links">
+          <a href="/"
+            ><p><b>HOME</b></p></a
+          >
+          <a href="/"
+            ><p><b>PRODUCTS</b></p></a
+          >
+          <a href="/"
+            ><p><b>SERVICES</b></p></a
+          >
+          <a href="/"
+            ><p><b>COMPANY</b></p></a
+          >
+        </div>
+        <div class="footer_contenido-redes">
+          <img src="https://img.icons8.com/metro/52/000000/facebook.png" />
+          <img src="https://img.icons8.com/metro/52/000000/instagram.png" />
+          <img src="https://img.icons8.com/ios-glyphs/60/000000/youtube--v1.png"/>
+          <img src="https://img.icons8.com/metro/52/000000/linkedin.png" />
+        </div>
+        <div class="footer_contenido-terminos">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            totam assumenda voluptas architecto nam, aspernatur fugit eligendi?
+            Odio harum et, voluptatibus placeat numquam quos eos reiciendis,
+            voluptatem amet quo explicabo?
+          </p>
+        </div>
+      </div>
+      <div class="footer_cookies">
+        <p>
+          Advertencia: Este sitio utiliza cookies propias y de terceros © 2022
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    //******************************************************
+    //*********** POP UP REGISTRO DE USUARIOS **************
+    //******************************************************
+
+    var bot_user_reg = document.getElementById("user_reg");
+    var botregistro = document.getElementById("boton_registro");
+    var dialogo = document.getElementById("dialogo");
+
+    bot_user_reg.addEventListener("click", () => dialogo.showModal());
+    //botregistro.addEventListener("click", () => dialogo.close());
+  </script>
+</html>
+>>>>>>> 50236a6686aab6a031de028f58db635d20ef1e69

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -266,4 +267,274 @@
       //botregistro.addEventListener("click", () => dialogo.close());
     </script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--este meta es para ayudar a que el proyecto pueda escalarse en el tamaño del dispositivo del usuario-->
+    <meta name="description" content="contactenos" />    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+  </head>
+  <body id="body">
+ 
+    <header class="header">
+      <div class="header__logo">
+        <a href="./"
+          ><img class="header__logo__img" src="./assets/ulthar-logo1.png"
+        /></a>
+      </div>
+
+      <div class="header__search">
+        <input class="input" type="text" placeholder="Buscar" />
+      </div>
+
+      <div id="header__login" class="header__login">
+        <img class="header__login__img" src="./assets/user_icon.png" alt="" />
+      </div>
+
+      <div class="header__menu">
+        <div class="header__menu__imagen">
+          <img class="header__menu__img" src="./assets/menu.png" alt="" />
+        </div>
+
+        <ul class="lista">
+          <li><a href="./quienes_somos.html">Quiénes Somos</a></li>
+          <li><a href="./nuestros_productos.html">Nuestros Productos</a></li>
+          <li><a href="./nuestros_servicios.html">Nuestros Servicios</a></li>
+          <li><a href="./galeria.html">Galeria de Imagenes</a></li>
+          <li><a href="./contactenos.html">Contáctenos</a></li>
+          <li>______</li>
+          <li><a href="/">Idioma</a></li>
+          <li><a href="/">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="login" class="login">
+      <div class="login_registro">
+        <div class="login_registro-usuario">
+          <p>
+            ¿Nuevo usuario?
+            <input
+              type="button"
+              class="user_reg"
+              id="user_reg"
+              value="Registrate aquí"
+            />
+          </p>
+        </div>
+        <div class="login_registro-producto">
+          <p><a href="/">Registra aquí</a> tus productos</p>
+        </div>
+      </div>
+      <div class="login_forma">
+        <h2>Iniciar Sesión</h2>
+        <div id="login_forma-datos" class="login_forma-datos">
+          <form action="/login" method="POST">
+            <input
+            class="usuario"
+            type="text"
+            name="e_mail"
+            placeholder="Dirección de correo"
+            required
+          />
+          <input
+            class="contraseña"
+            type="password"
+            name="contrasena"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+        <p>Al iniciar sesión usted acepta nuestros términos de servicio</p>
+
+        <div class="button_login">
+          <input
+            class="iniciar-sesion"
+            type="submit"
+            value="Iniciar Sesión"
+            onclick="alert('¡Iniciar sesión!')"
+          />
+          <input class="recuerdame" type="checkbox" /><i> Recuérdame</i>
+        </div>
+        <a href="/">¿Olvidaste tu usuario o contraseña?</a>
+          </form>
+      </div>
+    </section>
+
+    <dialog id="dialogo" class="pop_up">
+      <h1>Registrarte es demasiado fácil</h1>
+      <form action="/frminsertar" method="POST">
+        <input
+          type="text"
+          name="nombre_usuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+        <input
+          type="tel"
+          name="numero_celular"
+          placeholder="Número de celular"
+          required
+        />
+        <input
+          type="email"
+          name="e_mail"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="password"
+          name="contrasena"
+          placeholder="Contraseña"
+          required
+        />
+
+        <input
+          type="submit"
+          id="boton_registro"
+          class="boton_registro"
+          value="Log On"
+        />
+      </form>
+    </dialog>
+
+    <h1>Contáctenos</h1>
+    <section class="contenedor_principal-contactenos">
+      <div class="container_iconos">
+        <img
+          id="cont_whatsapp"
+          class="cont_whatsapp"
+          src="https://img.icons8.com/ios/2x/whatsapp.png"
+        />
+        <p><b>WhatsApp</b></p>
+      </div>
+      <div class="container_iconos">
+        <img
+          id="cont_telegram"
+          class="cont_telegram"
+          src="https://img.icons8.com/ios-filled/2x/telegram-app.png"
+        />
+        <p><b>Telegram</b></p>
+      </div>
+      <div class="container_iconos">
+        <img
+          id="cont_linkedin"
+          class="cont_linkedin"
+          src="https://img.icons8.com/metro/2x/linkedin.png"
+        />
+        <p><b>Linkedin</b></p>
+      </div>
+      <div class="container_iconos">
+        <img
+          id="cont_gmail"
+          class="cont_gmail"
+          src="https://img.icons8.com/dotty/2x/gmail.png"
+        />
+        <p><b>Gmail</b></p>
+      </div>
+      <div class="container_iconos">
+        <img
+          id="cont_chat"
+          class="cont_chat"
+          src="https://img.icons8.com/ios/72/speech-bubble-with-dots.png"
+        />
+        <p><b>Chat</b></p>
+      </div>
+    </section>
+    <section id="contactenos_whats" class="contactenos_whats">
+      <p class="parrafo"><h2>Para informar acerca de algún inconveniente relacionado con el producto que ofrecemos,<br/>
+        por favor comuníquese con nosotros por medio de WhatsApp al número que aparece a continuación<br/>
+        ######</h2>
+      </p>
+    </section>
+    <section id="contactenos_telegram" class="contactenos_telegram">
+      <p class="parrafo1"><h2>Para informar acerca de algún inconveniente relacionado con el producto que ofrecemos,<br/>
+        por favor comuníquese con nosotros por medio de Telegram al número que aparece a continuación<br/>
+        ######</h2>
+      </p>
+    </section>
+    <section id="contactenos_linkedin" class="contactenos_linkedin">
+      <p class="parrafo2"><h2>Para informar acerca de algún inconveniente relacionado con el producto que ofrecemos,<br/>
+        por favor comuníquese con nosotros por medio de Linkedin al correo que aparece a continuación<br/>
+        <a href="/">usuario@linkedin.com</a></h2>
+      </p>
+    </section>
+    <section id="contactenos_gmail" class="contactenos_gmail">
+      <p class="parrafo3"><h2>Para informar acerca de algún inconveniente relacionado con el producto que ofrecemos,<br/>
+        por favor comuníquese con nosotros por medio de Linkedin al correo que aparece a continuación<br/>
+        <a href="/">usuario@gmail.com</a></h2>
+      </p>
+    </section>
+    <section id="contactenos_chat" class="contactenos_chat">
+      <input class="input_chat" type="text" placeholder="Cuentanos tu problema o petición"/>
+      <p><h3>Añade evidencias (opcional)</h3></p>
+      <div class="entradas">
+        <input class="evidencias_archivos" type="file"/>
+        <input class="evidencias_fotos" type="image"/>
+      </div>
+      <input class="enviar" type="submit"/>
+    </section>
+    <footer class="footer">
+      <div class="footer_logo">
+        <a href="/">
+          <img class="footer_logo-img" src="./assets/ulthar-logo1.png" />
+        </a>
+      </div>
+      <div class="footer_contenido">
+        <div class="footer_contenido-links">
+          <a href="/"
+            ><p><b>HOME</b></p></a
+          >
+          <a href="/"
+            ><p><b>PRODUCTS</b></p></a
+          >
+          <a href="/"
+            ><p><b>SERVICES</b></p></a
+          >
+          <a href="/"
+            ><p><b>COMPANY</b></p></a
+          >
+        </div>
+        <div class="footer_contenido-redes">
+          <img src="https://img.icons8.com/metro/52/000000/facebook.png" />
+          <img src="https://img.icons8.com/metro/52/000000/instagram.png" />
+          <img src="https://img.icons8.com/ios-glyphs/60/000000/youtube--v1.png"/>
+          <img src="https://img.icons8.com/metro/52/000000/linkedin.png" />
+        </div>
+        <div class="footer_contenido-terminos">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            totam assumenda voluptas architecto nam, aspernatur fugit eligendi?
+            Odio harum et, voluptatibus placeat numquam quos eos reiciendis,
+            voluptatem amet quo explicabo?
+          </p>
+        </div>
+      </div>
+      <div class="footer_cookies">
+        <p>
+          Advertencia: Este sitio utiliza cookies propias y de terceros © 2022
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      //******************************************************
+      //*********** POP UP REGISTRO DE USUARIOS **************
+      //******************************************************
+  
+      var bot_user_reg = document.getElementById("user_reg");
+      var botregistro = document.getElementById("boton_registro");
+      var dialogo = document.getElementById("dialogo");
+  
+      bot_user_reg.addEventListener("click", () => dialogo.showModal());
+      //botregistro.addEventListener("click", () => dialogo.close());
+    </script>
+  </body>
+>>>>>>> 50236a6686aab6a031de028f58db635d20ef1e69
 </html>

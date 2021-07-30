@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -331,3 +332,338 @@
     //botregistro.addEventListener("click", () => dialogo.close());
   </script>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="description" content="Index"/>
+    <meta name="robots" content="index,follow" />    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>🚀ULTHAR</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./assets/ulthar-logo1.png" />
+      </div>
+
+      <div class="header__search">
+        <input class="input" type="text" placeholder="Buscar" />
+      </div>
+
+      <div id="header__login" class="header__login">
+        <img class="header__login__img" src="./assets/user_icon.png" alt="" />
+      </div>
+
+      <div class="header__menu">
+        <div class="header__menu__imagen">
+          <img class="header__menu__img" src="./assets/menu.png" alt="" />
+        </div>
+
+        <ul class="lista">
+          <li><a href="./quienes_somos.html">Quiénes Somos</a></li>
+          <li><a href="./nuestros_productos.html">Nuestros Productos</a></li>
+          <li><a href="./nuestros_servicios.html">Nuestros Servicios</a></li>
+          <li><a href="./galeria.html">Galería de Imágenes</a></li>
+          <li><a href="./contactenos.html">Contáctenos</a></li>
+          <li>______</li>
+          <li><a href="/">Idioma</a></li>
+          <li><a href="/">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="login" class="login">
+      <div class="login_registro">
+        <div class="login_registro-usuario">
+          <p>
+            ¿Nuevo usuario?
+            <input
+              type="button"
+              class="user_reg"
+              id="user_reg"
+              value="Registrate aquí"
+            />
+          </p>
+        </div>
+      </div>
+      
+      <div class="login_forma">
+        <h2>Iniciar Sesión</h2>
+        <div id="login_forma-datos" class="login_forma-datos">
+          <form action="/login" method="POST">
+            <input
+            class="usuario"
+            type="text"
+            name="e_mail"
+            placeholder="Dirección de correo"
+            required
+          />
+          <input
+            class="contraseña"
+            type="password"
+            name="contrasena"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+        <p>Al iniciar sesión usted acepta nuestros términos de servicio</p>
+
+        <div class="button_login">
+          <input
+            class="iniciar-sesion"
+            type="submit"
+            value="Iniciar Sesión"
+          />
+          <input class="recuerdame" type="checkbox" /><i> Recuérdame</i>
+        </div>
+        <a href="/">¿Olvidaste tu usuario o contraseña?</a>
+          </form>
+      </div>
+    </section>
+
+    <dialog id="dialogo" class="pop_up">
+      <h1>Registrarte es demasiado fácil</h1>
+      <form action="/frminsertar" method="POST">
+        <input
+          type="text"
+          name="nombre_usuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+        <input
+          type="tel"
+          name="numero_celular"
+          placeholder="Número de celular"
+          required
+        />
+        <input
+          type="email"
+          name="e_mail"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="password"
+          name="contrasena"
+          placeholder="Contraseña"
+          required
+        />
+
+        <input
+          type="submit"
+          id="boton_registro"
+          class="boton_registro"
+          value="Log On"
+        />
+      </form>
+    </dialog>
+
+    <section class="bannerPrincipal">
+      <div class="bannerPrincipal_descripcion">
+        <h1>Un mensaje del futuro</h1>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
+          laudantium aut veniam ipsam maiores, nesciunt nisi cumque recusandae
+          ratione dolore velit quia consectetur.
+        </p>
+        <input class="botonBanner" type="button" value="Mas Informacion ->" />
+      </div>
+      <div class="bannerPrincipal_imagen"></div>
+    </section>
+
+    <section class="iconos_enlace">
+      <div class="contenedor_icono">
+        <a class="iconos_enlace-somos" href="./quienes_somos.html">
+          <img
+            class="iconos_enlace-somos-img"
+            src="https://img.icons8.com/ios-filled/100/000000/manufacturing.png"
+          />
+          <p>Quiénes Somos</p>
+        </a>
+      </div>
+
+      <div class="contenedor_icono">
+        <a class="iconos_enlace-productos" href="./nuestros_productos.html">
+          <img
+            class="iconos_enlace-productos-img"
+            src="https://img.icons8.com/ios-filled/96/000000/rocket.png"
+          />
+          <p>Nuestros Productos</p>
+        </a>
+      </div>
+
+      <div class="contenedor_icono">
+        <a class="iconos_enlace-servicios" href="./nuestros_servicios.html">
+          <img
+            class="iconos_enlace-servicios-img"
+            src="https://img.icons8.com/material/96/000000/gears--v1.png"
+          />
+          <p>Nuestros Servicios</p>
+        </a>
+      </div>
+
+      <div class="contenedor_icono">
+        <a class="iconos_enlace-imagenes" href="./galeria.html">
+          <img
+            class="iconos_enlace-imagenes-img"
+            src="https://img.icons8.com/ios-filled/96/000000/image-gallery.png"
+          />
+          <p>Galeria</p>
+        </a>
+      </div>
+
+      <div class="contenedor_icono">
+        <a class="iconos_enlace-contactenos" href="./contactenos.html">
+          <img
+            class="iconos_enlace-contactanos-img"
+            src="https://img.icons8.com/material/96/000000/speech-bubble--v1.png"
+          />
+          <p>Contáctenos</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="bannerSecundario">
+      <div class="bannerSecundario_img"></div>
+      <div class="bannerSecundario_descripcion">
+        <h1><b>CREW DRAGON RULES!</b></h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum tempore,
+          numquam ipsum ratione nihil quisquam fuga non laudantium eligendi at
+          dolore, totam debitis architecto, voluptatum aliquam perferendis
+          distinctio incidunt ad!
+        </p>
+      </div>
+    </section>
+
+    <section class="noticias">
+      <div class="noticias_container">
+        <div class="noticias_item">
+          <img class="noticias_item-img" src="./assets/mano.jpg" alt="img_1" />
+          <a href="/"><h3>Hola Mundo</h3></a>
+          <div class="noticias_item-descripcion">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem voluptatibus deleniti temporibus velit.
+            </p>
+          </div>
+        </div>
+        <div class="noticias_item">
+          <img
+            class="noticias_item-img"
+            src="./assets/astronauta.jpg"
+            alt="img_2"
+          />
+          <a href="/"><h3>Hola Mundo</h3></a>
+          <div class="noticias_item-descripcion">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem voluptatibus deleniti temporibus velit.
+            </p>
+          </div>
+        </div>
+        <div class="noticias_item">
+          <img
+            class="noticias_item-img"
+            src="./assets/robert.jpg"
+            alt="img_3"
+          />
+          <a href="/"><h3>Hola Mundo</h3></a>
+          <div class="noticias_item-descripcion">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem voluptatibus deleniti temporibus velit.
+            </p>
+          </div>
+        </div>
+        <div class="noticias_item">
+          <img
+            class="noticias_item-img"
+            src="./assets/paneles.jpg"
+            alt="img_4"
+          />
+          <a href="/"><h3>Hola Mundo</h3></a>
+          <div class="noticias_item-descripcion">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem voluptatibus deleniti temporibus velit.
+            </p>
+          </div>
+        </div>
+        <div class="noticias_item">
+          <img class="noticias_item-img" src="./assets/drone.jpg" alt="img_5" />
+          <a href="/"><h3>Hola Mundo</h3></a>
+          <div class="noticias_item-descripcion">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem voluptatibus deleniti temporibus velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer_logo">
+        <a href="/">
+          <img class="footer_logo-img" src="./assets/ulthar-logo1.png" />
+        </a>
+      </div>
+      <div class="footer_contenido">
+        <div class="footer_contenido-links">
+          <a href="/"
+            ><p><b>HOME</b></p></a
+          >
+          <a href="/"
+            ><p><b>PRODUCTS</b></p></a
+          >
+          <a href="/"
+            ><p><b>SERVICES</b></p></a
+          >
+          <a href="/"
+            ><p><b>COMPANY</b></p></a
+          >
+        </div>
+        <div class="footer_contenido-redes">
+          <img src="https://img.icons8.com/metro/52/000000/facebook.png" />
+          <img src="https://img.icons8.com/metro/52/000000/instagram.png" />
+          <img src="https://img.icons8.com/ios-glyphs/60/000000/youtube--v1.png"/>
+          <img src="https://img.icons8.com/metro/52/000000/linkedin.png" />
+        </div>
+        <div class="footer_contenido-terminos">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            totam assumenda voluptas architecto nam, aspernatur fugit eligendi?
+            Odio harum et, voluptatibus placeat numquam quos eos reiciendis,
+            voluptatem amet quo explicabo?
+          </p>
+        </div>
+      </div>
+      <div class="footer_cookies">
+        <p>
+          Advertencia: Este sitio utiliza cookies propias y de terceros © 2022
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    //******************************************************
+    //*********** POP UP REGISTRO DE USUARIOS **************
+    //******************************************************
+
+    var bot_user_reg = document.getElementById("user_reg");
+    var botregistro = document.getElementById("boton_registro");
+    var dialogo = document.getElementById("dialogo");
+
+    bot_user_reg.addEventListener("click", () => dialogo.showModal());
+    //botregistro.addEventListener("click", () => dialogo.close());
+  </script>
+</html>
+>>>>>>> 50236a6686aab6a031de028f58db635d20ef1e69
